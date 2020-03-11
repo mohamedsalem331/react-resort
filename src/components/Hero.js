@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Hero({children,hero}) {
+export default function Hero(props) {
     return (
-        <header className={hero}>
-            {children}
+        <header className={props.hero}>
+            {props.children}
         </header>
     )
 }

@@ -9,11 +9,12 @@ export default class FeaturedRooms extends Component {
 
     render() {
         let {loading, featuredRooms} = this.context
+        
         featuredRooms = featuredRooms.map(room => {
             return (<Room key={room.id} room={room}/>)
         })
 
-        return (
+        return ( 
             <section className="featured-rooms">
                 <Title title="featured rooms"/>
                     <div className="featured-rooms-center">
