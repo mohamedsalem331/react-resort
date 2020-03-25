@@ -5,7 +5,7 @@ import Rooms from './pages/Rooms'
 import Error from './pages/Error'
 import SingleRoom from './pages/SingleRoom'
 // import soso from './pages/soso'
-// import product from './pages/product'ffre
+// import product from './pages/product'
 import Navbar from './components/Navbar'
 import {Switch,Route} from "react-router-dom"
 
