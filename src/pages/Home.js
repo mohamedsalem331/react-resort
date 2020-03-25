@@ -6,6 +6,7 @@ import Services from '../components/Services'
 import FeaturedRooms from '../components/FeaturedRooms'
 
 const Home = () => {
+
   return (      
     <>
       <Hero hero="defaultHero"> 

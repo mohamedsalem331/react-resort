@@ -14,11 +14,10 @@ export default class SingleRoom extends React.Component {
     static contextType = RoomContext
 
     render() {
-        
-        
+           
         const {getRoom} = this.context
         const room = getRoom(this.state.slug)
-        console.log(this.state.slug)
+        console.log(this.state.slug) 
         if (!room) {
             return ( 
                 <div className="error">

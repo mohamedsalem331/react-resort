@@ -359,9 +359,7 @@ export default [
     }
   },
   {
-    sys: {
-      id: "7"
-    },
+    sys: {id: "7"},
     fields: {
       name: "double standard",
       slug: "double-standard",
