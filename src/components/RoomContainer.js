@@ -2,7 +2,6 @@ import React from "react";
 import RoomsFilter from "./RoomFilter";
 import RoomsList from "./RoomList";
 import { RoomContext } from "../context";
-import Loading from "./Loading";
 
 
 class RoomContainer extends React.Component {
@@ -10,7 +9,7 @@ class RoomContainer extends React.Component {
   static contextType = RoomContext
 
   render() {
-    const { loading, sortedRooms, rooms } = this.context
+    const {sortedRooms, rooms } = this.context
     
       return (
         <>

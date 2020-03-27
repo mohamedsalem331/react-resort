@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Client from './Contentful'
-import items from './data'
 
 const RoomContext = React.createContext()
 
@@ -21,10 +20,13 @@ class RoomProvider extends Component {
 
   getData = async () => {
     try {
-    //   let response = await Client.getEntries({
-    //     content_type: "beachResortRoom"
-    //   });
-      let rooms = this.formatData(items);
+      let response = await Client.getEntries({
+        content_type: "beachResortRoom",
+        order: "sys.createdAt"
+      });
+      console.log(response);
+      
+      let rooms = this.formatData(response.items);
       let featuredRooms = rooms.filter(room => room.featured === true);
 
       let maxPrice = Math.max(...rooms.map(item => item.price));
@@ -66,10 +68,7 @@ class RoomProvider extends Component {
   };
 
   handleChange = event => {
-    const value =
-      event.target.type === "checkbox"
-        ? event.target.checked
-        : event.target.value;
+    const value = event.target.type === "checkbox" ? event.target.checked : event.target.value
     const name = event.target.name;
     this.setState(
       {
