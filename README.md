@@ -3,7 +3,7 @@ A resort web app building with React.js
 
 ## React-App-Project
 
-First you download/clone the repo.
-Second you run the terminal and navigate to the dir
-Third Run Npm Install
-Fourth Npm start
+#First you download/clone the repo.
+#Second you run the terminal and navigate to the dir
+#Third Run Npm Install
+#Fourth Npm start
